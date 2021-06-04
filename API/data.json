@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "fullname": "mimi",
+      "email": "gemima@gmail.com",
+      "country": ",,,,dx",
+      "id": 8
+    },
+    {
+      "fullname": "mima",
+      "email": "gemima@gmail.com",
+      "country": ",,,,dx",
+      "id": 8
+    },
+    {
+      "fullname": "test1",
+      "email": "test@gmail.fr",
+      "country": "test",
+      "id": 9
+    },
+    {
+      "fullname": "aze",
+      "email": "azejj.vv",
+      "country": "azerty",
+      "id": 12
+    }
+  ]
+}

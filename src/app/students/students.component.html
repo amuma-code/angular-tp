@@ -1,0 +1,24 @@
+
+<table class="table table-light">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom du touriste</th>
+        <th scope="col">email</th>
+        <th scope="col">pays de provenance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students; index as i">
+        <th scope="row">{{ i+1 }}</th>
+        <td>{{ student.fullname }}</td>
+        <td>{{ student.email }}</td>
+        <td *ngIf="student.country === 'USA'" style="color:blue;">{{ student.country }}</td>
+        <td *ngIf="student.country != 'USA'" >{{ student.country }}</td>
+        <td [ngStyle]="{'background-color':students.country === 'USA' ? 'green' : 'red' }"></td>
+        <td> <button type="submit" class="btn btn-primary"  (click)="updatetourist()">modifier un touriste </button></td>
+        <td> <button type="submit" class="btn btn-primary"  (click)="deletettouriste()">supprimer un touriste </button></td>
+      </tr>
+
+    </tbody>
+  </table>
